@@ -1,0 +1,129 @@
+/* 初期化*/
+* {
+    box-sizing: border-box;
+}
+input {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+/*JSで作ったスパンを編集*/
+span{
+    color: red;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    margin-top: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+ul li:nth-child(odd) {
+
+}
+
+ul li:hover {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+ul li.checked {
+    background: rgba(215, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    text-decoration: line-through;
+    transition: 0.3s ease;
+}
+
+
+body {
+    background: rgb(238, 174, 174);
+    background: radial-gradient(circle, rgba(238, 174, 174, 1) 0%, rgba(175, 148, 233, 1) 100%);
+}
+.input {
+    margin: 0 auto;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.25);
+}
+.close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    color: white;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.addBtn {
+    display: inline-block;
+    width: 100px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.25 );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+transition: 0.3s ease;
+}
+.addBtn:hover {
+    display: inline-block;
+    width: 100px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(0, 21, 255, 0.25);
+    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 );
+}
+

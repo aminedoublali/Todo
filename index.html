@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoApp</title>
+</head>
+<body>
+    <header id="myDIV" class="header">
+        <h2 class="Title">My To Do List</h2>
+        <input class="input" type="text" id="myInput" placeholder="本日やることを記入してください。"onkeypress="handleKeyPress(event)">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </header>
+      
+      <ul id="myUL">
+      </ul>
+      <script src="main.js"></script>
+</body>
+</html>
